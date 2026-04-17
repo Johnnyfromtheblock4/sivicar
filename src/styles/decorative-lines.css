@@ -51,18 +51,18 @@
 
 .dot-1 {
   right: 15%;
-  top: 54%;
+  top: 52%;
   background: var(--brand-orange);
 }
 
 .dot-2 {
-  left: 12%;
+  left: 10%;
   bottom: 18%;
   background: #fff;
 }
 
 .dot-3 {
-  right: 22%;
+  right: 18%;
   top: 18%;
   background: var(--brand-blue);
 }
@@ -99,7 +99,7 @@
   }
 }
 
-@media (max-width: 450.98px) {
+@media (max-width: 555px) {
   .line {
     opacity: 0.55;
     border-width: 4px;

@@ -133,9 +133,9 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 850.98px) {
   .hero-badge {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .hero-section {
