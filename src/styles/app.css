@@ -1,0 +1,41 @@
+:root {
+  --brand-blue: #1f4f88;
+  --brand-orange: #db7436;
+  --brand-light: #f7f8fb;
+  --brand-white: #ffffff;
+  --brand-dark: #0f2743;
+  --brand-muted: #6c7c8f;
+  --brand-silver: #d9dee5;
+  --shadow-soft: 0 15px 45px rgba(12, 40, 74, 0.12);
+  --shadow-strong: 0 20px 60px rgba(8, 25, 47, 0.24);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand-title {
+  font-family: "Fugaz One", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.site-shell {
+  position: relative;
+}
+
+.section-block {
+  position: relative;
+  padding: 110px 0;
+}
+
+@media (max-width: 767.98px) {
+  .section-block {
+    padding: 80px 0;
+  }
+}

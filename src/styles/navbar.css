@@ -1,0 +1,153 @@
+.top-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 16px 0;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    padding 0.3s ease,
+    backdrop-filter 0.3s ease;
+}
+
+.top-navbar.scrolled {
+  background: rgba(15, 39, 67, 0.82);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  padding: 10px 0;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.brand img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand-title {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.brand-subtitle {
+  font-size: 0.82rem;
+  color: #dbe5f2;
+  font-weight: 600;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.desktop-nav a {
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+}
+
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--brand-orange);
+  transition: width 0.3s ease;
+}
+
+.desktop-nav a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: rgba(15, 39, 67, 0.98);
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.35s ease,
+      padding 0.35s ease;
+  }
+
+  .mobile-nav.open {
+    max-height: 320px;
+    padding: 18px 24px 24px;
+  }
+
+  .mobile-nav a {
+    color: #fff;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .top-navbar {
+    padding: 12px 0;
+  }
+
+  .brand img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .brand-title {
+    font-size: 1rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.72rem;
+  }
+}

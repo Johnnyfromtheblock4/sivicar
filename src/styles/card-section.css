@@ -1,0 +1,108 @@
+.card-section {
+  background: #fff;
+}
+
+.loyalty-card-box {
+  perspective: 1200px;
+}
+
+.loyalty-card-visual {
+  position: relative;
+  min-height: 290px;
+  padding: 32px;
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(31, 79, 136, 0.98), rgba(11, 39, 71, 0.94)),
+    #12325a;
+  color: #fff;
+  box-shadow: var(--shadow-strong);
+  overflow: hidden;
+}
+
+.loyalty-card-visual::before,
+.loyalty-card-visual::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.16);
+}
+
+.loyalty-card-visual::before {
+  width: 260px;
+  height: 260px;
+  right: -70px;
+  top: -70px;
+}
+
+.loyalty-card-visual::after {
+  width: 220px;
+  height: 220px;
+  left: -60px;
+  bottom: -60px;
+  border-color: rgba(219, 116, 54, 0.55);
+}
+
+.mini-chip {
+  width: 56px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffcf91, #f2a24f);
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.small-label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.loyalty-card-visual h3 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+.card-number {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  opacity: 0.85;
+}
+
+.card-benefits {
+  padding: 10px 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(31, 79, 136, 0.08);
+}
+
+.benefit-item svg {
+  margin-top: 4px;
+  color: var(--brand-orange);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.benefit-item h4 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+  color: var(--brand-dark);
+}
+
+.benefit-item p {
+  color: var(--brand-muted);
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 767.98px) {
+  .loyalty-card-visual {
+    border-radius: 22px;
+  }
+}

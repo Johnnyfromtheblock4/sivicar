@@ -1,0 +1,25 @@
+.section-heading {
+  max-width: 800px;
+  margin-bottom: 42px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--brand-orange);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: var(--brand-dark);
+  margin-bottom: 14px;
+}
+
+.section-heading p {
+  color: var(--brand-muted);
+  font-size: 1.06rem;
+  line-height: 1.75;
+}
