@@ -16,10 +16,34 @@
   font-size: clamp(2rem, 4vw, 3.5rem);
   color: var(--brand-dark);
   margin-bottom: 14px;
+  line-height: 1.1;
 }
 
 .section-heading p {
   color: var(--brand-muted);
   font-size: 1.06rem;
   line-height: 1.75;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .section-eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+  }
+
+  .section-heading h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .section-heading p {
+    font-size: 0.96rem;
+    line-height: 1.6;
+  }
 }
