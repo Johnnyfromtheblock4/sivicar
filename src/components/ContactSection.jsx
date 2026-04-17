@@ -25,7 +25,7 @@ const ContactSection = () => {
               <div className="contact-item">
                 <FaLocationDot />
                 <div>
-                  <h4>Dove siamo</h4>
+                  <h4>Indirizzo</h4>
                   <p>
                     Via Italia 221, Via del Commercio, 62-64, 20874 Busnago MB
                   </p>
