@@ -3,81 +3,83 @@
   inset: 0;
   overflow: hidden;
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
 }
 
-.line,
-.dot {
+.decor {
   position: absolute;
-  z-index: 1;
+  display: block;
+  max-width: none;
   pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  will-change: transform;
 }
 
-.line {
-  border: 5px solid transparent;
-  border-radius: 50%;
-  opacity: 0.9;
+/* DESKTOP */
+
+/* BLU */
+.blue {
+  top: 0;
+  right: 0;
+  width: 420px;
+  transform: translate(30%, -15%);
 }
 
-/* ===== LINEE FISSE ===== */
-
-.line-1 {
-  width: 620px;
-  height: 620px;
-  right: -180px;
-  top: 80px;
-  border-color: var(--brand-blue);
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  transform: rotate(15deg);
+/* ARANCIONE */
+.orange {
+  right: 0;
+  bottom: 0;
+  width: 360px;
+  transform: translate(35%, 20%);
 }
 
-.line-2 {
-  width: 500px;
-  height: 500px;
-  right: -60px;
-  bottom: -120px;
-  border-color: var(--brand-orange);
-  border-left-color: transparent;
-  border-top-color: transparent;
-  transform: rotate(-18deg);
+/* BIANCO */
+.white {
+  left: 0;
+  bottom: 0;
+  width: 180px;
+  transform: translate(-45%, 10%);
 }
 
-.line-3 {
-  width: 260px;
-  height: 260px;
-  left: -90px;
-  bottom: 120px;
-  border-color: rgba(255, 255, 255, 0.45);
-  border-right-color: transparent;
-  border-top-color: transparent;
+/* TABLET */
+
+@media (max-width: 992px) {
+  .blue {
+    width: 340px;
+    transform: translate(35%, 10%);
+  }
+
+  .orange {
+    width: 300px;
+    transform: translate(38%, 22%);
+  }
+
+  .white {
+    width: 150px;
+    transform: translate(-50%, 12%);
+  }
 }
 
-/* ===== DOT FISSI ===== */
+/* MOBILE */
 
-.dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-}
+@media (max-width: 768px) {
+  .decor {
+    opacity: 0.9;
+  }
 
-/* arancione */
-.dot-1 {
-  top: 59%;
-  right: 115px;
-  background: var(--brand-orange);
-}
+  .blue {
+    width: 300px;
+    transform: translate(40%, 40%);
+  }
 
-/* blu */
-.dot-2 {
-  top: 140px;
-  right: 310px;
-  background: var(--brand-blue);
-}
+  .orange {
+    width: 240px;
+    transform: translate(45%, 30%);
+  }
 
-/* bianco */
-.dot-3 {
-  left: 150px;
-  bottom: 180px;
-  background: #fff;
+  .white {
+    width: 120px;
+    transform: translate(-55%, 20%);
+  }
 }
