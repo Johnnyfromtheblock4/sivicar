@@ -1,5 +1,13 @@
-.decorative-lines .line,
-.decorative-lines .dot {
+.decorative-lines {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.line,
+.dot {
   position: absolute;
   z-index: 1;
   pointer-events: none;
@@ -11,11 +19,13 @@
   opacity: 0.9;
 }
 
+/* ===== LINEE FISSE ===== */
+
 .line-1 {
-  width: clamp(280px, 42vw, 660px);
-  height: clamp(280px, 42vw, 660px);
-  right: -12%;
-  top: 6%;
+  width: 620px;
+  height: 620px;
+  right: -180px;
+  top: 80px;
   border-color: var(--brand-blue);
   border-left-color: transparent;
   border-bottom-color: transparent;
@@ -23,10 +33,10 @@
 }
 
 .line-2 {
-  width: clamp(220px, 34vw, 520px);
-  height: clamp(220px, 34vw, 520px);
-  right: 3%;
-  bottom: -10%;
+  width: 500px;
+  height: 500px;
+  right: -60px;
+  bottom: -120px;
   border-color: var(--brand-orange);
   border-left-color: transparent;
   border-top-color: transparent;
@@ -34,110 +44,40 @@
 }
 
 .line-3 {
-  width: clamp(160px, 22vw, 320px);
-  height: clamp(160px, 22vw, 320px);
-  left: -6%;
-  bottom: 7%;
+  width: 260px;
+  height: 260px;
+  left: -90px;
+  bottom: 120px;
   border-color: rgba(255, 255, 255, 0.45);
   border-right-color: transparent;
   border-top-color: transparent;
 }
 
+/* ===== DOT FISSI ===== */
+
 .dot {
-  width: clamp(10px, 1.2vw, 18px);
-  height: clamp(10px, 1.2vw, 18px);
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
 }
 
+/* arancione */
 .dot-1 {
-  right: 15%;
-  top: 52%;
+  top: 59%;
+  right: 115px;
   background: var(--brand-orange);
 }
 
+/* blu */
 .dot-2 {
-  left: 10%;
-  bottom: 18%;
-  background: #fff;
-}
-
-.dot-3 {
-  right: 18%;
-  top: 18%;
+  top: 140px;
+  right: 310px;
   background: var(--brand-blue);
 }
 
-@media (max-width: 991.98px) {
-  .line-1 {
-    right: -18%;
-    top: 12%;
-  }
-
-  .line-2 {
-    right: -6%;
-    bottom: -8%;
-  }
-
-  .line-3 {
-    left: -10%;
-    bottom: 6%;
-  }
-
-  .dot-1 {
-    right: 18%;
-    top: 66%;
-  }
-
-  .dot-2 {
-    left: 28%;
-    bottom: 10%;
-  }
-
-  .dot-3 {
-    right: 44%;
-    top: 20%;
-  }
-}
-
-@media (max-width: 555px) {
-  .line {
-    opacity: 0.55;
-    border-width: 4px;
-  }
-
-  .line-1 {
-    width: 300px;
-    height: 300px;
-    right: -130px;
-    top: 120px;
-  }
-
-  .line-2 {
-    width: 230px;
-    height: 230px;
-    right: -90px;
-    bottom: -40px;
-  }
-
-  .line-3 {
-    width: 150px;
-    height: 150px;
-    left: -55px;
-    bottom: 40px;
-  }
-
-  .dot-1 {
-    right: 15%;
-    top: 67%;
-  }
-
-  .dot-2 {
-    left: 20%;
-    bottom: 12%;
-  }
-
-  .dot-3 {
-    right: 30%;
-    top: 18%;
-  }
+/* bianco */
+.dot-3 {
+  left: 150px;
+  bottom: 180px;
+  background: #fff;
 }

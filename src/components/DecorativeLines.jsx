@@ -6,6 +6,7 @@ const DecorativeLines = () => {
       <span className="line line-1"></span>
       <span className="line line-2"></span>
       <span className="line line-3"></span>
+
       <span className="dot dot-1"></span>
       <span className="dot dot-2"></span>
       <span className="dot dot-3"></span>
